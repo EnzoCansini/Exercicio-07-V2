@@ -1,0 +1,106 @@
+     @media (max-width: 767px) {
+       /* Estilos para telas menores que 768px (smartphones) */
+       .container {
+         width: 100%; /* Ocupa toda a largura */
+       }
+     }
+     @media (min-width: 768px) and (max-width: 1024px) {
+       /* Estilos para telas entre 768px e 1024px (tablets) */
+       .container {
+         width: 80%; /* Ocupa 80% da largura */
+       }
+     }
+     @media (min-width: 1025px) {
+       /* Estilos para telas maiores que 1024px (desktops) */
+       .container {
+         width: 70%; /* Ocupa 70% da largura */
+       }
+     }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+header .logo p{
+    color: #0F241D;
+    font-family: "Poppins";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+header .logo span{
+    color: #69B99D;
+    font-family: "Poppins"
+}
+header .hamburguer {
+    width: 2rem;
+    height: 2rem;
+}
+header .hamburguer span{
+    width: auto;
+    height: auto;
+}
+.divisor {
+    height: .1rem;
+    width: auto;
+    background-color: #E4E4E4;
+}
+.line01{
+    display: grid;
+    padding-top: 1rem;
+}
+.imagem {
+    display: flex;
+    height: 17rem;
+    width: 30rem;
+    position: relative;
+}
+.line01 .imagem img {
+    position: absolute;
+    height: 15rem;
+    width: 22rem;
+    border-radius: 4px;
+    align-self: flex-end;
+}
+.line01 .imagem .quadrado{
+    position: absolute;
+    left: 15%;
+    height: 15rem;
+    width: 22rem;
+    border-radius: 4px;
+    background: #CCF4E6;
+    justify-self: end;
+}
+.line01 .textos{
+    display: flex;
+    padding-top: 1.5rem;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem;
+}
+.line01 .textos h2{
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.line01 .textos p{
+    color: #767676;
+    padding-top: .5rem;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
