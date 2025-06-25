@@ -1,31 +1,27 @@
-     @media (max-width: 767px) {
-       /* Estilos para telas menores que 768px (smartphones) */
-       .container {
-         width: 100%; /* Ocupa toda a largura */
-       }
-     }
-     @media (min-width: 768px) and (max-width: 1024px) {
-       /* Estilos para telas entre 768px e 1024px (tablets) */
-       .container {
-         width: 80%; /* Ocupa 80% da largura */
-       }
-     }
-     @media (min-width: 1025px) {
-       /* Estilos para telas maiores que 1024px (desktops) */
-       .container {
-         width: 70%; /* Ocupa 70% da largura */
-       }
-     }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vw;
+}
+.caixa01{
+    justify-self: center;
+    justify-content: center;
+    border: 10vw;
+    width: 80%;
 }
 .wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+}
+header .logo{
+    margin-left: 10vw;
 }
 header .logo p{
     color: #0F241D;
@@ -47,33 +43,48 @@ header .hamburguer span{
     width: auto;
     height: auto;
 }
+ .navegar{
+    display: flex;
+    margin-right: 20vw;
+}
+ .navegar p{
+    margin-left: 1rem;
+    color: #0F241D;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 .divisor {
     height: .1rem;
-    width: auto;
+    width: 100vw;
     background-color: #E4E4E4;
 }
 .line01{
-    display: grid;
-    padding-top: 1rem;
-}
-.imagem {
     display: flex;
-    height: 17rem;
-    width: 30rem;
+    padding-top: 1rem;
+    height: 25rem;
+    margin-bottom: 3rem;
+}
+.line01 .imagem {
+    display: flex;
+    height: calc(2vw + 22rem);
+    width: calc(2vw + 39rem);
     position: relative;
 }
 .line01 .imagem img {
     position: absolute;
-    height: 15rem;
-    width: 22rem;
+    height: calc(2vw + 20rem);
+    width: calc(2vw + 30rem);
     border-radius: 4px;
     align-self: flex-end;
 }
 .line01 .imagem .quadrado{
     position: absolute;
     left: 15%;
-    height: 15rem;
-    width: 22rem;
+    height: calc(2vw + 20rem);
+    width: calc(2vw + 30rem);
     border-radius: 4px;
     background: #CCF4E6;
     justify-self: end;
@@ -81,13 +92,13 @@ header .hamburguer span{
 .line01 .textos{
     display: flex;
     padding-top: 1.5rem;
+    align-self: flex-end;
     justify-content: center;
     flex-direction: column;
     width: 20rem;
 }
 .line01 .textos h2{
     color: #000;
-    text-align: center;
     font-family: Poppins;
     font-size: 30px;
     font-style: normal;
@@ -97,10 +108,118 @@ header .hamburguer span{
 .line01 .textos p{
     color: #767676;
     padding-top: .5rem;
-    text-align: center;
     font-family: "DM Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.line01 .botao {
+    display: flex;
+    
+}
+.line01 .botao button{
+    margin-top: 1rem;
+    width: 15rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #7ab9a3;
+    color: aliceblue;
+    border: none;
+}
+.line01 {
+    display: grid;
+    grid-template-columns: 31fr 12fr 56fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "texto vazio imagem"
+    "texto vazio imagem"
+    "botao vazio imagem";
+}
+.line01 .textos {
+  grid-area: texto;
+}
+
+.line01 .imagem {
+  grid-area: imagem;
+}
+
+.line01 .botao {
+  grid-area: botao;
+}
+.divisorSP{
+    background: -webkit-linear-gradient(90deg, #69B99D 100%, #CCF4E6 34%);
+    height: .1rem;
+    width: 100vw;
+}
+.line02{
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.line02 h2{
+    color: #0F241D;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.line02 p{
+    color: #767676;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+@media screen and (min-width: 767px) {
+    .hamburguer{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .navegar{
+    display: none;
+}
+    header .logo{
+    margin-left: 0;
+}
+    .container {
+        border: 0;
+         width: 95%; /* Ocupa toda a largura */
+        justify-content: center;
+    }
+    .line01{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .line01 .textos{
+        align-self: center;
+    }
+    .line01 .textos p{
+        text-align: center;
+    }
+    .line01 .textos h2{
+        text-align: center;
+    }
+    .line01 .imagem {
+    height: calc(2vw + 13rem);
+    width: calc(2vw + 24rem);
+    }
+    .line01 .imagem img {
+    height: calc(2vw + 12rem);
+    width: calc(2vw + 18rem);
+    }
+    .line01 .imagem .quadrado{
+    height: calc(2vw + 12rem);
+    width: calc(2vw + 18rem);
+}
+
 }
