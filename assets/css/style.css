@@ -46,7 +46,7 @@ header .hamburguer span{
 }
  .navegar{
     display: flex;
-    margin-right: 20vw;
+    margin-right: 15vw;
 }
  .navegar p{
     margin-left: 1rem;
@@ -71,13 +71,13 @@ header .hamburguer span{
 .line01 .imagem {
     display: flex;
     height: calc(2vw + 22rem);
-    width: calc(2vw + 39rem);
+    width: calc(3vw + 39rem);
     position: relative;
 }
 .line01 .imagem img {
     position: absolute;
     height: calc(2vw + 20rem);
-    width: calc(2vw + 30rem);
+    width: calc(3vw + 30rem);
     border-radius: 4px;
     align-self: flex-end;
 }
@@ -85,7 +85,7 @@ header .hamburguer span{
     position: absolute;
     left: 15%;
     height: calc(2vw + 20rem);
-    width: calc(2vw + 30rem);
+    width: calc(3vw + 30rem);
     border-radius: 4px;
     background: #CCF4E6;
     justify-self: end;
@@ -181,14 +181,14 @@ header .hamburguer span{
 }
 .line02 .imagem{
     display: flex;
-    height: 26rem;
+    height: 22rem;
     width: 35rem;
     position: relative;
 }
 .line02 .imagem img {
     position: absolute;
-    height: 23rem;
-    width: 33rem;
+    height: 20rem;
+    width: 30rem;
     border-radius: 4px;
     align-self: flex-end;
 }
@@ -204,7 +204,7 @@ header .hamburguer span{
 .line02 .textos{
     display: flex;
     flex-direction: column;
-    width: 40rem;
+    width: 35rem;
     margin-top: 2rem;
     align-self: flex-start;
 }
@@ -275,7 +275,6 @@ line-height: normal;
 }
     .container {
         border: 0;
-         width: 95%; /* Ocupa toda a largura */
         justify-content: center;
     }
     .line01{
@@ -295,7 +294,7 @@ line-height: normal;
     }
     .line01 .imagem {
     height: calc(2vw + 13rem);
-    width: calc(2vw + 24rem);
+    width: calc(2vw + 22rem);
     }
     .line01 .imagem img {
     height: calc(2vw + 12rem);
@@ -305,5 +304,51 @@ line-height: normal;
     height: calc(2vw + 12rem);
     width: calc(2vw + 18rem);
 }
-
+.line02{
+    flex-direction: column;
+    height: auto;
 }
+.line02 .textos{
+    width: 90vw;
+    margin-left: 5vw;
+}
+.line02 .imagem{
+    height: 17rem;
+    width: 22.6rem;
+}
+.line02 .imagem img {
+    height: 15rem;
+    width: 22.5rem;
+}
+.line02 .imagem .quadrado2{
+    left: -20%;
+    height: 7.5rem;
+    width: 22rem;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+       /* Estilos para telas entre 768px e 1024px (tablets) */
+
+
+    .line01 .textos{
+        width: 20rem;
+    }
+    .line01 .imagem {
+    align-self: center;
+    height: calc(2vw + 14.1rem);
+    width: calc(2vw + 26.1rem);
+    }
+    .line01 .imagem img {
+    height: calc(2vw + 13rem);
+    width: calc(2vw + 19.5rem);
+    }
+    .line01 .imagem .quadrado{
+    height: calc(2vw + 13rem);
+    width: calc(2vw + 19.5rem);
+}
+    }
+    @media (min-width: 1025px) {
+       /* Estilos para telas maiores que 1024px (desktops) */
+    
+    }
+    
