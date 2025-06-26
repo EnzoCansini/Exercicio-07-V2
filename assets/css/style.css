@@ -1,21 +1,4 @@
-     @media (max-width: 767px) {
-       /* Estilos para telas menores que 768px (smartphones) */
-       .container {
-         width: 100%; /* Ocupa toda a largura */
-       }
-     }
-     @media (min-width: 768px) and (max-width: 1024px) {
-       /* Estilos para telas entre 768px e 1024px (tablets) */
-       .container {
-         width: 80%; /* Ocupa 80% da largura */
-       }
-     }
-     @media (min-width: 1025px) {
-       /* Estilos para telas maiores que 1024px (desktops) */
-       .container {
-         width: 70%; /* Ocupa 70% da largura */
-       }
-     }
+
 *{
     margin: 0;
     padding: 0;
@@ -26,6 +9,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+}
+.caixa01{
+    margin-left: 10vw;
 }
 header .logo p{
     color: #0F241D;
@@ -56,7 +42,7 @@ header .hamburguer span{
     display: grid;
     padding-top: 1rem;
 }
-.imagem {
+.line01 .imagem {
     display: flex;
     height: 17rem;
     width: 30rem;
@@ -104,3 +90,112 @@ header .hamburguer span{
     font-weight: 400;
     line-height: normal;
 }
+.line02{
+    display: flex;
+    margin-top: 5rem;
+    height: 40rem;
+    position: relative;
+}
+.line02 h2{
+    color: #0F241D;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.line02 p{
+    color: #767676;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.line02 .imagem{
+    display: flex;
+    height: 26rem;
+    width: 35rem;
+    position: relative;
+}
+.line02 .imagem img {
+    position: absolute;
+    height: 23rem;
+    width: 33rem;
+    border-radius: 4px;
+    align-self: flex-end;
+}
+.line02 .imagem .quadrado2{
+    position: absolute;
+    left: -10%;
+    height: 15rem;
+    width: 22rem;
+    border-radius: 4px;
+    background: #CCF4E6;
+    justify-self: end;
+}
+.line02 .textos{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    margin-top: 2rem;
+    align-self: flex-start;
+}
+.caixa03{
+    background: #F9F9F9;
+}
+.line03 h2{
+    color: #0F241D;
+text-align: center;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.line03 p{
+    color: #0F241D;
+text-align: center;
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.line03 .textos{
+    margin-bottom: 4rem;
+}
+.line03 .caixaSP .textos{
+    margin-top: 2rem;
+}
+.listacaixas{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5vw;
+    margin-bottom: 3rem;
+}
+.caixaSP{
+    background: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 25rem;
+    filter: drop-shadow(0px 0px 12px rgba(7, 6, 6, 0.342));
+    align-items: center;
+}
+.caixaSP .icone{
+    margin-top: 3rem;
+}
+.caixaSP .icon-woman-hair{
+    font-size: 5rem;
+}
+.caixaSP h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+    .container {
+    width: 100%; 
+    }
+    }
