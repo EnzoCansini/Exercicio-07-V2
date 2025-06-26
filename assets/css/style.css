@@ -1,4 +1,5 @@
 
+
 *{
     margin: 0;
     padding: 0;
@@ -67,6 +68,7 @@ header .hamburguer span{
     height: 25rem;
     margin-bottom: 3rem;
 }
+.line01 .imagem {
 .line01 .imagem {
     display: flex;
     height: calc(2vw + 22rem);
