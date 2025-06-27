@@ -211,6 +211,10 @@ header .hamburguer span{
 .caixa03{
     background: #F9F9F9;
 }
+.line03{
+    display: flex;
+    flex-direction: column;
+}
 .line03 h2{
     color: #0F241D;
 text-align: center;
@@ -229,7 +233,11 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-.line03 .textos{
+.line03 p span{
+    color: #69B99D;
+    font-weight: 700;
+}
+.line03 .inicio .textos{
     margin-bottom: 4rem;
 }
 .line03 .caixaSP .textos{
@@ -237,29 +245,54 @@ line-height: normal;
 }
 .listacaixas{
     display: flex;
-    justify-content: space-around;
-    padding: 0 5vw;
+    justify-content: center;
     margin-bottom: 3rem;
 }
 .caixaSP{
     background: #F9F9F9;
     display: flex;
     flex-direction: column;
-    width: 25rem;
-    height: 25rem;
+    margin: 0 1rem;
+    width: 20rem;
+    height: 20rem;
     filter: drop-shadow(0px 0px 12px rgba(7, 6, 6, 0.342));
     align-items: center;
 }
 .caixaSP .icone{
     margin-top: 3rem;
 }
-.caixaSP .icon-woman-hair{
+.caixaSP .icone span{
     font-size: 5rem;
+    color: #69B99D;
 }
 .caixaSP h3{
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
+    color: #0F241D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.caixaSP p{
+    color: #767676;
+text-align: center;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.linhacaixa{
+    align-self: flex-end;
+    justify-self: end;
+    margin-top: 1.3rem;
+    height: 1rem;
+    width: 20rem;
+    background-color: #69B99D;
 }
 @media screen and (min-width: 767px) {
     .hamburguer{
@@ -325,6 +358,15 @@ line-height: normal;
     height: 7.5rem;
     width: 22rem;
 }
+.listacaixas {
+    flex-direction: column;
+    width: 100vw;
+    justify-content: end;
+}
+.caixaSP{
+    margin: 1rem auto;
+}
+
 }
 @media (min-width: 768px) and (max-width: 1024px) {
        /* Estilos para telas entre 768px e 1024px (tablets) */
