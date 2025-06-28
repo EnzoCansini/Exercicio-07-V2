@@ -24,7 +24,8 @@
 header .logo{
     margin-left: 10vw;
 }
-header .logo p{
+header .logo p,
+footer .logo p{
     color: #0F241D;
     font-family: "Poppins";
     font-size: 21px;
@@ -32,8 +33,15 @@ header .logo p{
     font-weight: 700;
     line-height: normal;
 }
+footer .logo p{
+    font-size: 30px;
+}
 header .logo span{
     color: #69B99D;
+    font-family: "Poppins"
+}
+footer .logo span{
+    color: #ffffff;
     font-family: "Poppins"
 }
 header .hamburguer {
@@ -153,13 +161,20 @@ header .hamburguer span{
   grid-area: botao;
 }
 .divisorSP{
-    background: -webkit-linear-gradient(90deg, #69B99D 100%, #CCF4E6 34%);
+    background: #69B99D;
+    background: linear-gradient(90deg, #ccf4e6 0%,  #69B99D 100%);
+    height: .1rem;
+    width: 100vw;
+}
+.divisorSP2{
+    background: #69B99D;
+    background: linear-gradient(90deg, #69B99D 0%, #ccf4e6 100%);
     height: .1rem;
     width: 100vw;
 }
 .line02{
     display: flex;
-    margin-top: 5rem;
+    padding: 5rem 0;
     height: 40rem;
     position: relative;
 }
@@ -294,6 +309,176 @@ line-height: normal;
     width: 20rem;
     background-color: #69B99D;
 }
+.line04{
+    padding: 2rem 0;
+}
+.line04 h2{
+    color: #0F241D;
+text-align: center;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.line04{
+    margin-top: 7rem;
+    background: rgb(31, 255, 143);
+    background: linear-gradient(45deg, rgb(5, 220, 52)0%, rgb(176, 247, 187)100%);
+}
+.line04 .row{
+    display: block;
+    padding: 4rem;
+}
+.line04 .row h2{
+    margin-top: 1.5rem;
+    font-size: calc(1.625rem + 2.5vw);
+}
+.line04 .slide{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-bottom: 4rem;
+}
+.line04 .swiper-slide{
+    width: 350px !important;
+    margin: 0 !important;
+}
+.line04 .slide .card{
+    width: 20rem;
+    height: 20rem;
+    background-color: #151515;
+    padding: 3rem 2rem;
+}
+.line04 .slide .card img{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+.line04 .slide .card p{
+    color: rgb(108, 117, 125);
+    font-size: 1rem;
+}
+.line04 .slide .card .text{
+    width: auto;
+    height: 70%;
+}
+.line04 .slide .card .footer{
+    display: flex;
+    width: auto;
+    height: 30%;
+    margin-top: 1rem;
+}
+.line04 .slide .card .footer p{
+    color: #fff;
+    font-size: 1rem;
+}
+.line04 .slide .card .footer p span{
+    font-size: .8rem;
+    color: rgb(108, 117, 125);
+}
+.line05 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 12rem 0;
+}
+.line05 .box1{
+    padding-left: 10vw;
+}
+.line05 .box2{
+    margin: auto 0;
+    padding-left: 4rem;
+}
+.line05 .box2 p{
+    margin: 1rem 0;
+}
+.line05 .box1 h2{
+    color:  #0F241D;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.line05 .textos p{
+    color:  #767676;
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 1rem;
+}
+.line05 .box2 p{
+    margin: auto 0;
+}
+.line05 .box2 span{
+    font-size: 25px;
+    color: #69B99D;
+    font-family: "DM Sans";
+}
+.line05 .texto1{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+.line05 .texto1 span{
+    margin-right: .4rem;
+}
+.line05 .botao button{
+    display: flex;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 4px;
+    background:  #69B99D;
+    align-items: center;
+    margin: 1rem 0;
+    border: none;
+}
+.line05 .botao button p{
+        color:  #F9F9F9;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.line05 .botao button span{
+    font-size: 25px;
+    color:  #F9F9F9;
+    font-family: "DM Sans";
+    margin: 0 .5rem 0 1rem;
+}
+footer{
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #69B99D;
+}
+footer p{
+    color:  #F9F9F9;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.box3{
+    margin-left: 5rem;
+}
+.box4{
+    width: 30vw;
+    display: flex;
+    align-items: center;
+}
+.box4 .icones{
+    padding-right: 10vw;
+}
+.box4 .icones span{
+    margin-right: 1rem;
+    font-size: 20px;
+    color: #F9F9F9;
+}
 @media screen and (min-width: 767px) {
     .hamburguer{
         display: none;
@@ -366,7 +551,25 @@ line-height: normal;
 .caixaSP{
     margin: 1rem auto;
 }
-
+.line05 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0;
+}
+.line05 .box1, .line05 .box2{
+    width: 100vw;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+}
+.icones{
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+.box4{
+    width: auto;
+}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
        /* Estilos para telas entre 768px e 1024px (tablets) */
