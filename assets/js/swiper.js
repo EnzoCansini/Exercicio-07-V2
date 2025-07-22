@@ -1,11 +1,8 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 30,
     freeMode: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+    autoplay: false,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

@@ -320,11 +320,12 @@ font-size: 36px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+margin-bottom: 3rem;
 }
 .line04{
     margin-top: 7rem;
-    background: rgb(31, 255, 143);
-    background: linear-gradient(45deg, rgb(5, 220, 52)0%, rgb(176, 247, 187)100%);
+    background: rgb(255, 255, 255);
+    width: 100vw;
 }
 .line04 .row{
     display: block;
@@ -339,15 +340,23 @@ line-height: normal;
     margin-right: 4rem;
     padding-bottom: 4rem;
 }
+.line04 .slide {
+    margin-left: 20rem;
+}
+.line04 .swiper-wrapper{
+    display: flex;
+}
 .line04 .swiper-slide{
-    width: 350px !important;
+    width: 950px !important;
     margin: 0 !important;
 }
 .line04 .slide .card{
-    width: 20rem;
-    height: 20rem;
-    background-color: #151515;
+    width: 35rem;
+    height: 15rem;
+    background-color: #ffffff;
     padding: 3rem 2rem;
+    margin: 0 1rem;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
 }
 .line04 .slide .card img{
     width: 3rem;
@@ -355,27 +364,40 @@ line-height: normal;
     margin-right: 1rem;
     border-radius: 50%;
 }
+.line04 .footer1{
+    display: flex;
+}
 .line04 .slide .card p{
-    color: rgb(108, 117, 125);
+    color: rgb(0, 0, 0);
     font-size: 1rem;
 }
 .line04 .slide .card .text{
     width: auto;
     height: 70%;
 }
-.line04 .slide .card .footer{
+.line04 .slide .card .footer1{
+    align-items: center;
     display: flex;
     width: auto;
     height: 30%;
     margin-top: 1rem;
 }
-.line04 .slide .card .footer p{
+.line04 .slide .card .footer1 p{
     color: #fff;
     font-size: 1rem;
 }
-.line04 .slide .card .footer p span{
+.line04 .slide .card .footer1 p{
+    font-family: "DM Sans";
     font-size: .8rem;
     color: rgb(108, 117, 125);
+}
+.line04 .slide .card .text p span{
+    font-family: "Palanquin";
+    color: #69B99D;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
 }
 .line05 {
     display: grid;
@@ -449,6 +471,7 @@ line-height: normal;
     font-family: "DM Sans";
     margin: 0 .5rem 0 1rem;
 }
+
 footer{
     padding: 5rem 0;
     display: flex;
